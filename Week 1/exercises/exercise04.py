@@ -1,0 +1,5 @@
+movie = input("Please enter a movie name: ")
+print(f"Lowercase: {movie.lower}")
+print(f"Uppercase: {movie.upper}")
+print(f"The character 'a' appears {movie.count("a")} times")
+print(f"Replace: {movie.replace("a","b")}")
