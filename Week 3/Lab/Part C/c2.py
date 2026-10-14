@@ -1,13 +1,12 @@
 balance = 1000.0
 pin = 1234
 
-while True:
-    try:
-        input_pin = input("PIN: ")
-        if int(input_pin) != pin:
-            print("Incorrect PIN!")
-            break
-        
+try:
+    input_pin = input("PIN: ")
+    if int(input_pin) != pin:
+        print("Incorrect PIN!")
+
+    while True:
         user_action = input("Please choose an action (balance, withdraw, deposit): ") # If the pin is not correct, it's valid. Ask for options.
         
         if user_action.lower() == "balance":
@@ -28,5 +27,5 @@ while True:
                 print(f"Cannot deposit {deposit_amount} into account. Your balance stays at {balance}.")
         else:
             print("Invalid menu choice. The options are 'balance', 'withdraw' or 'deposit' - Please try again.")
-    except Exception as e:
-        print(f"Error occured: {e}")
+except Exception as e:
+    print(f"Error occured: {e}")
