@@ -1,4 +1,4 @@
-mark = int(input("Enter a mark between 0 and 100: "))
+mark = float(input("Enter a mark between 0 and 100: "))
 
 if mark >=70 and mark <=100:
     print("First!")
