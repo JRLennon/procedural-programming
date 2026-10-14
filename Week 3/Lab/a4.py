@@ -11,4 +11,4 @@ elif mark >=40 and mark <=49:
 elif mark <40 and mark >=0:
     print("Fail")
 else:
-    print(f"Invalid mark - The mark entered was {mark}")
+    print(f"Invalid mark - The mark entered was {mark}") # invalid mark check was included to check if the data inputted is within the expected boundary of 0 and 100.
