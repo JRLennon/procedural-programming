@@ -1,4 +1,5 @@
 import csv
+from tabulate import tabulate # external module, import through `pip install -r requirements.txt`
 
 def read_csv(filename):
     # read the csv file and return its headings and student records.
@@ -9,15 +10,15 @@ def read_csv(filename):
 
     return headings, records
 
-
 def display_total(records):
     print(f"Total student records: {len(records)}")
-
 
 def display_headings(headings):
     print(", ".join(headings))
 
-
 def display_records(records):
-    for record in records:
-        print(", ".join(record.values()))
+    if not records:
+        print("No student records to display.")
+        return
+
+    print(tabulate(records, headers="keys", tablefmt="grid"))
