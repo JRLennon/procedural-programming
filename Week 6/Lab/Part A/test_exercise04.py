@@ -31,4 +31,7 @@ def test_negative_02():
 def test_negative_03():
     assert movie_ticket_price(2,5,-6,2) == None
 
+def test_negative_04():
+    assert movie_ticket_price(2,5,6,-2) == None
+
 pytest.main()
