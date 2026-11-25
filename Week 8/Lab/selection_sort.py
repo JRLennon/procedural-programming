@@ -15,10 +15,11 @@ def selection_sort(array):
             swaps += 1 # increase swaps counter
 
         print(f"After pass {i+1}: {array}") # print list after each pass
+    print(f"Total swaps: {swaps}")
     return array
 
-test_lists = [[25,64,11,22,12], [64,25,22,12,11]]
+# test_lists = [[25,64,11,22,12], [64,25,22,12,11]]
 
-for list in test_lists:
-    print(f"\nSorting: {list}")
-    selection_sort(list.copy())
+# for list in test_lists:
+#     print(f"\nSorting: {list}")
+#     selection_sort(list.copy())
