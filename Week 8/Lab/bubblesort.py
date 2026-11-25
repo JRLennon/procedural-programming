@@ -19,9 +19,10 @@ def bubble_sort(array):
     print(f"Total swaps: {swaps}")
     return array
 
-test_lists = [[10,3,6,2,8,1],[1,2,3,4,5],[5,4,3,2,1]]
-# arbritatry list, already sorted list, reversed list
+# # testing the function with provided values (uncomment to use)
+# test_lists = [[10,3,6,2,8,1],[1,2,3,4,5],[5,4,3,2,1]]
+# # arbritatry list, already sorted list, reversed list
 
-for list in test_lists:
-    print(f"\nSorting: {list}")
-    bubble_sort(list.copy())
+# for list in test_lists:
+#     print(f"\nSorting: {list}")
+#     bubble_sort(list.copy())
